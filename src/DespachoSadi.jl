@@ -1,10 +1,15 @@
 module DespachoSadi
 
-    using PowerModels
-    using JuMP
-    using CasosProgramacionDiaria
-    using PSSEModels
+using PowerModels
+using JuMP
+using CasosProgramacionDiaria
+using PSSEModels
+using Dates
+const _PM = PowerModels
+const _IM = PowerModels.InfrastructureModels
 
-    greet() = println("¡Hola desde DespachoSadi!")
+include("escenario.jl")
+
+export obtener_escenario
 
 end # module DespachoSadi
